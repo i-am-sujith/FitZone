@@ -1,0 +1,54 @@
+installed nodemon for automatic re-compilation so whenever changes happens in node ,
+ nodemon will automatically do re-compile
+
+ mongoDB
+ -----------------------
+ mongosh(try when you get time)
+
+ {
+"username":"sujith", 
+"name":"sujith",
+"password":"abc123",
+"age":25,
+"gender":"male",
+"height":168,
+"weight":58,
+"fitnesstracking":[]
+}
+ mongoDB shell commands
+ ------------------------
+*to seee databases in mongoDB
+   show dbd
+*open any database
+   use databaseName
+*to see collections
+   show collections
+*to access all data from a collection
+   db.collectionName.find()
+*to access any single data
+   db.collectionName.findOne({argument})
+*insert a data
+   db.collectionName.insertOne({argument})
+*to find data according to condition
+   db.collectionName.find({balance:{gt:4000}})  
+
+   server-database integration
+   -----------------------------
+   3002=27017
+   mongoose- library used to integrate server and database
+
+   step
+   ========
+   import mongoose
+   connection string to connection - connect()
+   define connection model -model()
+   export model
+
+   <div class="form-group mt-3">
+                        <input formControlName="age" type="number" class="form-control" id="age"
+                            placeholder="Enter your age" min="13">
+                    </div>
+
+
+
+                    matInput [min]="maxDate" [max]="minDate"
